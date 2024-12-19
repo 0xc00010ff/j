@@ -1,12 +1,46 @@
-`j` is a cross-platform CLI tool in TypeScript for developers working with Next.js and Python LLM projects. The CLI’s primary function is to call APIs and provide helpful output. The target audience uses macOS, Windows, and Linux. The CLI must be user-friendly, robust, and developer-centric.
+# j
 
-The current setup includes:
-• TypeScript for development.
-• commander for argument parsing.
-• axios for API calls.
-• chalk for colored terminal output.
-• ora for loading spinners.
+j do what I say
 
-Tasks to continue: 1. Enhance the CLI with additional commands (e.g., authentication, configuration, or advanced API options). 2. Optimize the build and release process for npm and binary distribution. 3. Add developer-friendly features like shell autocompletion, environment variable handling, or better error messages. 4. Ensure seamless cross-platform support.
+## stack
 
-Focus on clean, maintainable code with a great developer experience.
+typescript + gpt + your terminal = magic
+
+## install
+
+```bash
+# npm
+npm install -g @0xc00010ff/j
+
+# or clone & build
+git clone https://github.com/0xc00010ff/j.git
+cd j
+npm install
+npm run build
+npm link
+```
+
+## examples
+
+```bash
+j make a new next project
+npx create-next-app@latest my-next-project
+
+j list abc*
+ls -d abc\*
+
+j show memory hogs
+ps aux | sort -rk 4 | head -n 10
+```
+
+## api key
+
+```bash
+# set
+j -k your-openai-key
+
+# remove
+j -k
+```
+
+PRs welcome. break things.
