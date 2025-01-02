@@ -2,6 +2,8 @@
 
 j do what I say
 
+**Beware! This is a foolishly dangerous piece of software**
+
 ## stack
 
 typescript + gpt + your terminal = magic
